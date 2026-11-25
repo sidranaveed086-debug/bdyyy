@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Khaross busy adamii 🎂💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --bg-cloud: #f4f8fc;
+      --card-bg: rgba(255, 254, 252, 0.86);
+      --card-border: rgba(136, 173, 209, 0.34);
+      --ink-deep: #1b2c3e;
+      --ink-soft: #445c75;
+      --ink-muted: #687f96;
+      --bow-blue: #8cb6dc;
+      --ribbon-slate: #5885b0;
+      --deep-navy: #355e87;
+      --shadow-soft: 0 22px 52px rgba(42, 73, 106, 0.09);
+      --shadow-card: 0 12px 34px rgba(42, 73, 106, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: var(--bg-cloud);
+      color: var(--ink-deep);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.78;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Soft watercolor cloud & pastel blue satin bows background */
+    .bow-backdrop {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse at 18% 16%, rgba(255, 255, 255, 0.92), transparent 45%),
+        radial-gradient(ellipse at 82% 28%, rgba(196, 222, 245, 0.55), transparent 52%),
+        radial-gradient(ellipse at 28% 78%, rgba(188, 217, 242, 0.5), transparent 55%),
+        radial-gradient(ellipse at 84% 85%, rgba(176, 209, 238, 0.45), transparent 50%),
+        linear-gradient(170deg, #f8fbfe 0%, #eef5fc 55%, #e6f0fa 100%);
+    }
+
+    .bow-svg {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .page-wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 20px 115px;
+    }
+
+    /* Music toggle */
+    .music-bar {
+      position: fixed;
+      top: 18px;
+      right: 18px;
+      z-index: 30;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 254, 252, 0.9);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(114, 152, 189, 0.38);
+      color: var(--ink-deep);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(45, 74, 105, 0.09);
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .music-bar:hover {
+      transform: translateY(-2px);
+      background: #ffffff;
+      border-color: var(--ribbon-slate);
+    }
+
+    .eq-dots {
+      display: inline-flex;
+      align-items: flex-end;
+      gap: 2.5px;
+      height: 13px;
+    }
+
+    .eq-dots span {
+      width: 2.5px;
+      height: 5px;
+      border-radius: 2px;
+      background: var(--ribbon-slate);
+      transition: height 0.2s ease;
+    }
+
+    .music-bar.playing .eq-dots span:nth-child(1) {
+      animation: eqBounce 0.9s infinite ease-in-out;
+    }
+    .music-bar.playing .eq-dots span:nth-child(2) {
+      animation: eqBounce 0.9s 0.2s infinite ease-in-out;
+    }
+    .music-bar.playing .eq-dots span:nth-child(3) {
+      animation: eqBounce 0.9s 0.4s infinite ease-in-out;
+    }
+
+    .music-bar:not(.playing) .eq-dots span {
+      height: 4px;
+      opacity: 0.45;
+    }
+
+    @keyframes eqBounce {
+      0%, 100% { height: 4px; }
+      50% { height: 13px; }
+    }
+
+    /* Glass cards */
+    .glass-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      padding: 36px 32px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-card);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .glass-card:hover {
+      box-shadow: var(--shadow-soft);
+    }
+
+    @media (max-width: 560px) {
+      .glass-card {
+        padding: 28px 20px;
+        border-radius: 24px;
+      }
+      .page-wrapper {
+        padding-top: 68px;
+      }
+      .music-bar {
+        top: 14px;
+        right: 14px;
+        padding: 8px 14px;
+        font-size: 0.8rem;
+      }
+    }
+
+    /* Hero section */
+    .hero {
+      text-align: center;
+      padding-top: 14px;
+      padding-bottom: 22px;
+    }
+
+    .calligraphy-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .love-calligraphy-svg {
+      width: min(360px, 86vw);
+      height: auto;
+      overflow: visible;
+    }
+
+    .love-stroke {
+      fill: none;
+      stroke: #46729e;
+      stroke-width: 2.35;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 1200;
+      stroke-dashoffset: 1200;
+      animation: drawLove 2.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    @keyframes drawLove {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.76rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--deep-navy);
+      background: rgba(140, 182, 220, 0.24);
+      border: 1px solid rgba(88, 133, 176, 0.3);
+      padding: 6px 15px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(2.2rem, 5.5vw, 3.35rem);
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--ink-deep);
+      margin-bottom: 10px;
+    }
+
+    .hero-name {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(2.4rem, 6.2vw, 3.6rem);
+      color: var(--ribbon-slate);
+      font-weight: 400;
+      display: block;
+      margin-top: 4px;
+    }
+
+    .hero-sub {
+      color: var(--ink-soft);
+      font-size: 0.98rem;
+      max-width: 540px;
+      margin: 12px auto 22px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #6b9ac7 0%, #4875a3 100%);
+      color: #ffffff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 10px 24px rgba(72, 117, 163, 0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 28px rgba(72, 117, 163, 0.34);
+      filter: brightness(1.03);
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.78);
+      color: var(--deep-navy);
+      border: 1px solid rgba(88, 133, 176, 0.38);
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .btn-ghost:hover {
+      transform: translateY(-2px);
+      background: #ffffff;
+    }
+
+    /* Section headings */
+    .section-tag {
+      font-size: 0.74rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ribbon-slate);
+      font-weight: 600;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+
+    .section-heading {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.7rem, 3.8vw, 2.25rem);
+      font-weight: 600;
+      color: var(--ink-deep);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .section-caption {
+      text-align: center;
+      color: var(--ink-soft);
+      font-size: 0.94rem;
+      max-width: 540px;
+      margin: 0 auto 24px;
+    }
+
+    /* Pretty Cake Stage */
+    .cake-stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0 6px;
+    }
+
+    .cake-scene {
+      position: relative;
+      width: 290px;
+      height: 270px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-bottom: 18px;
+      user-select: none;
+    }
+
+    .cake-glow {
+      position: absolute;
+      bottom: 18px;
+      width: 230px;
+      height: 60px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(140, 182, 220, 0.45), transparent 72%);
+      filter: blur(8px);
+    }
+
+    .cake-svg {
+      width: 270px;
+      height: 255px;
+      overflow: visible;
+      z-index: 2;
+    }
+
+    .flame-group {
+      transform-box: fill-box;
+      transform-origin: center bottom;
+      cursor: pointer;
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+
+    .flame-outer {
+      animation: flickerOuter 1.3s infinite ease-in-out;
+      transform-origin: center bottom;
+    }
+
+    .flame-inner {
+      animation: flickerInner 0.95s infinite ease-in-out;
+      transform-origin: center bottom;
+    }
+
+    @keyframes flickerOuter {
+      0%, 100% { transform: scale(1, 1) rotate(-1.5deg); }
+      50% { transform: scale(1.07, 0.95) rotate(2deg); }
+    }
+
+    @keyframes flickerInner {
+      0%, 100% { transform: scale(1, 1); }
+      50% { transform: scale(0.92, 1.08); }
+    }
+
+    .candles-blown .flame-group {
+      opacity: 0;
+      transform: scale(0.1) translateY(-6px);
+      pointer-events: none;
+    }
+
+    .smoke-puff {
+      opacity: 0;
+      fill: none;
+      stroke: rgba(110, 138, 166, 0.65);
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+
+    .candles-blown .smoke-puff {
+      animation: smokeRise 2.1s ease-out forwards;
+    }
+
+    @keyframes smokeRise {
+      0% {
+        opacity: 0;
+        transform: translateY(4px) scale(0.8);
+      }
+      25% {
+        opacity: 0.85;
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-34px) scale(1.25);
+      }
+    }
+
+    .wish-box {
+      width: 100%;
+      max-width: 480px;
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid rgba(114, 152, 189, 0.32);
+      border-radius: 20px;
+      padding: 18px 20px;
+      text-align: center;
+    }
+
+    .wish-input {
+      width: 100%;
+      padding: 11px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(88, 133, 176, 0.35);
+      background: #ffffff;
+      color: var(--ink-deep);
+      font-family: inherit;
+      font-size: 0.92rem;
+      outline: none;
+      margin-bottom: 12px;
+      text-align: center;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .wish-input:focus {
+      border-color: var(--ribbon-slate);
+      box-shadow: 0 0 0 3px rgba(140, 182, 220, 0.25);
+    }
+
+    .cake-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .wish-status {
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: var(--deep-navy);
+      font-weight: 500;
+      min-height: 22px;
+    }
+
+    /* Exact Birthday Letter */
+    .letter-paper {
+      background: linear-gradient(180deg, rgba(255, 254, 252, 0.95), rgba(246, 250, 255, 0.9));
+      border: 1px solid rgba(130, 162, 194, 0.28);
+      border-radius: 22px;
+      padding: 28px 26px;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    }
+
+    @media (max-width: 560px) {
+      .letter-paper {
+        padding: 22px 18px;
+      }
+    }
+
+    .letter-text {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.22rem, 2.5vw, 1.42rem);
+      line-height: 1.85;
+      color: var(--ink-deep);
+      white-space: pre-line;
+    }
+
+    /* Extra Romantic Lines Strip */
+    .romantic-lines-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 8px;
+    }
+
+    .romantic-whisper {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(128, 166, 204, 0.28);
+      border-radius: 18px;
+      padding: 18px 22px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: clamp(1.18rem, 2.4vw, 1.35rem);
+      line-height: 1.72;
+      color: var(--ink-deep);
+      text-align: center;
+    }
+
+    /* Hidden Secret Compliment Card */
+    .secret-envelope {
+      border-radius: 22px;
+      border: 1.5px dashed rgba(88, 133, 176, 0.5);
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.86), rgba(223, 237, 250, 0.62));
+      padding: 28px 24px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+    }
+
+    .secret-envelope:hover {
+      transform: translateY(-2px);
+      border-color: var(--ribbon-slate);
+    }
+
+    .lock-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffffff;
+      color: var(--deep-navy);
+      border: 1px solid rgba(88, 133, 176, 0.34);
+      padding: 7px 16px;
+      border-radius: 999px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .secret-prompt-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.55rem;
+      font-weight: 600;
+      color: var(--ink-deep);
+      margin-bottom: 6px;
+    }
+
+    .secret-prompt-sub {
+      color: var(--ink-soft);
+      font-size: 0.92rem;
+    }
+
+    .secret-revealed-content {
+      display: none;
+      text-align: left;
+      animation: fadeSlideUp 0.65s ease forwards;
+    }
+
+    .secret-envelope.is-open {
+      cursor: default;
+      border-style: solid;
+      border-color: rgba(88, 133, 176, 0.42);
+      background: rgba(255, 254, 252, 0.95);
+      text-align: left;
+    }
+
+    .secret-envelope.is-open:hover {
+      transform: none;
+    }
+
+    .secret-envelope.is-open .secret-cover {
+      display: none;
+    }
+
+    .secret-envelope.is-open .secret-revealed-content {
+      display: block;
+    }
+
+    .secret-text {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.2rem, 2.4vw, 1.38rem);
+      line-height: 1.85;
+      color: var(--ink-deep);
+      white-space: pre-line;
+      margin-bottom: 16px;
+    }
+
+    .hide-btn-wrap {
+      text-align: right;
+    }
+
+    .btn-small {
+      background: rgba(140, 182, 220, 0.22);
+      color: var(--deep-navy);
+      border: 1px solid rgba(88, 133, 176, 0.36);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    /* Funny Future Advice + Sofa Saving Note */
+    .advice-text {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.22rem, 2.5vw, 1.4rem);
+      line-height: 1.8;
+      color: var(--ink-deep);
+      white-space: pre-line;
+    }
+
+    .sofa-note {
+      margin-top: 18px;
+      padding: 16px 20px;
+      border-radius: 18px;
+      background: rgba(173, 206, 235, 0.24);
+      border-left: 3.5px solid var(--ribbon-slate);
+      color: var(--ink-deep);
+      font-size: 0.96rem;
+    }
+
+    /* Second-by-Second Emotional Distance Sequence */
+    .emotional-stage {
+      text-align: center;
+      padding: 10px 6px 4px;
+    }
+
+    .emotional-main {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.28rem, 2.7vw, 1.5rem);
+      line-height: 1.8;
+      color: var(--ink-deep);
+      white-space: pre-line;
+      margin-bottom: 22px;
+    }
+
+    .beat-timeline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 11px;
+      min-height: 165px;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .beat-line {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.85s ease, transform 0.85s ease;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      color: var(--ink-soft);
+      font-size: 1.18rem;
+      max-width: 520px;
+    }
+
+    .beat-line.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .beat-question {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(2.1rem, 5.2vw, 3rem);
+      color: var(--deep-navy);
+      line-height: 1.3;
+      margin-top: 6px;
+    }
+
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Interactive Questions */
+    .question-block {
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid rgba(130, 162, 194, 0.28);
+      border-radius: 20px;
+      padding: 22px 20px;
+      margin-bottom: 18px;
+    }
+
+    .question-label {
+      font-weight: 600;
+      font-size: 0.98rem;
+      color: var(--ink-deep);
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .choice-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .choice-pill {
+      background: #ffffff;
+      border: 1px solid rgba(88, 133, 176, 0.36);
+      color: var(--ink-deep);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .choice-pill:hover,
+    .choice-pill.active {
+      background: var(--ribbon-slate);
+      color: #ffffff;
+      border-color: var(--ribbon-slate);
+    }
+
+    .answer-input {
+      width: 100%;
+      padding: 11px 15px;
+      border-radius: 14px;
+      border: 1px solid rgba(88, 133, 176, 0.35);
+      background: #ffffff;
+      color: var(--ink-deep);
+      font-family: inherit;
+      font-size: 0.92rem;
+      outline: none;
+    }
+
+    .answer-input:focus {
+      border-color: var(--ribbon-slate);
+      box-shadow: 0 0 0 3px rgba(140, 182, 220, 0.24);
+    }
+
+    .reply-note {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: var(--deep-navy);
+      font-style: italic;
+      min-height: 20px;
+    }
+
+    /* Final Heartfelt Promise & Sign-off */
+    .final-card {
+      text-align: center;
+      background: linear-gradient(165deg, rgba(255, 254, 252, 0.95), rgba(221, 236, 250, 0.76));
+      border: 1px solid rgba(88, 133, 176, 0.36);
+    }
+
+    .final-dua {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.3rem, 2.8vw, 1.56rem);
+      font-weight: 500;
+      line-height: 1.8;
+      color: var(--ink-deep);
+      max-width: 600px;
+      margin: 12px auto 24px;
+    }
+
+    .signoff-jaan {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(2.3rem, 5.5vw, 3.2rem);
+      color: var(--ribbon-slate);
+      line-height: 1.15;
+    }
+
+    .signoff-name {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: 1.35rem;
+      color: var(--ink-soft);
+      margin-top: 2px;
+    }
+
+    .footer-meta {
+      margin-top: 18px;
+      font-size: 0.82rem;
+      color: var(--ink-muted);
+    }
+
+    /* Confetti canvas */
+    #confettiCanvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 40;
+    }
+  </style>
+</head>
+<body>
+  <div class="bow-backdrop"></div>
+
+  <!-- Soft watercolor pastel blue satin ribbon bows -->
+  <svg class="bow-svg" viewBox="0 0 1000 1500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="bowLoopL" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#c9e1f5" stop-opacity="0.72" />
+        <stop offset="55%" stop-color="#9ec4e5" stop-opacity="0.58" />
+        <stop offset="100%" stop-color="#7ca9d1" stop-opacity="0.48" />
+      </linearGradient>
+      <linearGradient id="bowLoopR" x1="100%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#d2e7f8" stop-opacity="0.74" />
+        <stop offset="60%" stop-color="#98c0e2" stop-opacity="0.56" />
+        <stop offset="100%" stop-color="#73a2cc" stop-opacity="0.46" />
+      </linearGradient>
+      <linearGradient id="bowTail" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#a5c9e8" stop-opacity="0.62" />
+        <stop offset="100%" stop-color="#d9eaf8" stop-opacity="0.35" />
+      </linearGradient>
+    </defs>
+
+    <!-- Top-right large satin bow -->
+    <g transform="translate(680, 130) rotate(-10)">
+      <path d="M 0 0 C -130 -95, -245 -55, -210 45 C -180 120, -65 75, 0 8 Z" fill="url(#bowLoopL)" stroke="#88b4db" stroke-width="2" />
+      <path d="M 0 0 C 130 -95, 245 -55, 210 45 C 180 120, 65 75, 0 8 Z" fill="url(#bowLoopR)" stroke="#88b4db" stroke-width="2" />
+      <path d="M -22 14 C -65 135, -110 245, -135 345 L -95 312 L -72 355 C -45 250, -18 140, -4 18 Z" fill="url(#bowTail)" stroke="#8cb6dc" stroke-width="1.8" />
+      <path d="M 18 14 C 75 130, 145 235, 205 320 L 208 272 L 245 298 C 180 202, 105 110, 32 16 Z" fill="url(#bowTail)" stroke="#8cb6dc" stroke-width="1.8" />
+      <rect x="-24" y="-22" width="48" height="54" rx="14" fill="#a8cbe8" stroke="#7ea9d0" stroke-width="2" />
+    </g>
+
+    <!-- Upper-left smaller satin bow -->
+    <g transform="translate(150, 240) rotate(14)">
+      <path d="M 0 0 C -85 -62, -160 -36, -138 30 C -118 80, -42 50, 0 5 Z" fill="url(#bowLoopL)" stroke="#88b4db" stroke-width="1.8" />
+      <path d="M 0 0 C 85 -62, 160 -36, 138 30 C 118 80, 42 50, 0 5 Z" fill="url(#bowLoopR)" stroke="#88b4db" stroke-width="1.8" />
+      <path d="M -14 10 C -42 90, -72 160, -88 225 L -62 204 L -46 232 C -28 162, -10 92, -2 12 Z" fill="url(#bowTail)" stroke="#8cb6dc" stroke-width="1.6" />
+      <path d="M 12 10 C 50 86, 95 154, 135 210 L 136 178 L 160 195 C 118 132, 70 72, 22 10 Z" fill="url(#bowTail)" stroke="#8cb6dc" stroke-width="1.6" />
+      <rect x="-16" y="-15" width="32" height="36" rx="10" fill="#a8cbe8" stroke="#7ea9d0" stroke-width="1.8" />
+    </g>
+
+    <!-- Mid-left medium satin bow -->
+    <g transform="translate(270, 740) rotate(16)">
+      <path d="M 0 0 C -115 -84, -215 -48, -185 40 C -158 108, -56 68, 0 7 Z" fill="url(#bowLoopL)" stroke="#88b4db" stroke-width="2" />
+      <path d="M 0 0 C 115 -84, 215 -48, 185 40 C 158 108, 56 68, 0 7 Z" fill="url(#bowLoopR)" stroke="#88b4db" stroke-width="2" />
+      <path d="M -20 12 C -58 120, -98 215, -120 305 L -84 276 L -64 314 C -40 220, -15 124, -3 16 Z" fill="url(#bowTail)" stroke="#8cb6dc" stroke-width="1.8" />
+      <path d="M 16 12 C 66 115, 128 206, 182 282 L 185 240 L 218 262 C 160 178, 94 98, 28 14 Z" fill="url(#bowTail)" stroke="#8cb6dc" stroke-width="1.8" />
+      <rect x="-22" y="-20" width="44" height="48" rx="13" fill="#a8cbe8" stroke="#7ea9d0" stroke-width="2" />
+    </g>
+
+    <!-- Mid-right smaller satin bow -->
+    <g transform="translate(830, 720) rotate(-12)">
+      <path d="M 0 0 C -85 -62, -160 -36, -138 30 C -118 80, -42 50, 0 5 Z" fill="url(#bowLoopL)" stroke="#88b4db" stroke-width="1.8" />
+      <path d="M 0 0 C 85 -62, 160 -36, 138 30 C 118 80, 42 50, 0 5 Z" fill="url(#bowLoopR)" stroke="#88b4db" stroke-width="1.8" />
+      <path d="M -14 10 C -42 90, -72 160, -88 225 L -62 204 L -46 232 C -28 162, -10 92, -2 12 Z" fill="url(#bowTail)" stroke="#8cb6dc" stroke-width="1.6" />
+      <path d="M 12 10 C 50 86, 95 154, 135 210 L 136 178 L 160 195 C 118 132, 70 72, 22 10 Z" fill="url(#bowTail)" stroke="#8cb6dc" stroke-width="1.6" />
+      <rect x="-16" y="-15" width="32" height="36" rx="10" fill="#a8cbe8" stroke="#7ea9d0" stroke-width="1.8" />
+    </g>
+
+    <!-- Bottom-left small satin bow -->
+    <g transform="translate(190, 1280) rotate(-8)">
+      <path d="M 0 0 C -85 -62, -160 -36, -138 30 C -118 80, -42 50, 0 5 Z" fill="url(#bowLoopL)" stroke="#88b4db" stroke-width="1.8" />
+      <path d="M 0 0 C 85 -62, 160 -36, 138 30 C 118 80, 42 50, 0 5 Z" fill="url(#bowLoopR)" stroke="#88b4db" stroke-width="1.8" />
+      <rect x="-16" y="-15" width="32" height="36" rx="10" fill="#a8cbe8" stroke="#7ea9d0" stroke-width="1.8" />
+    </g>
+
+    <!-- Bottom-right large satin bow -->
+    <g transform="translate(790, 1210) rotate(-18)">
+      <path d="M 0 0 C -125 -90, -235 -52, -202 42 C -172 115, -62 72, 0 8 Z" fill="url(#bowLoopL)" stroke="#88b4db" stroke-width="2" />
+      <path d="M 0 0 C 125 -90, 235 -52, 202 42 C 172 115, 62 72, 0 8 Z" fill="url(#bowLoopR)" stroke="#88b4db" stroke-width="2" />
+      <path d="M -20 14 C -62 130, -105 235, -130 330 L -90 298 L -68 340 C -42 238, -16 134, -4 18 Z" fill="url(#bowTail)" stroke="#8cb6dc" stroke-width="1.8" />
+      <path d="M 18 14 C 72 124, 138 222, 195 304 L 198 258 L 234 282 C 172 192, 100 104, 30 16 Z" fill="url(#bowTail)" stroke="#8cb6dc" stroke-width="1.8" />
+      <rect x="-24" y="-22" width="48" height="54" rx="14" fill="#a8cbe8" stroke="#7ea9d0" stroke-width="2" />
+    </g>
+  </svg>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- Music Button -->
+  <button id="musicToggle" class="music-bar" type="button" aria-label="Toggle birthday melody">
+    <span class="eq-dots"><span></span><span></span><span></span></span>
+    <span id="musicLabel">Play Melody</span>
+  </button>
+
+  <main class="page-wrapper">
+    <!-- Hero -->
+    <header class="glass-card hero">
+      <div class="calligraphy-wrap">
+        <svg class="love-calligraphy-svg" viewBox="0 0 420 145" aria-label="love with heart swash">
+          <path
+            class="love-stroke"
+            d="M 28 106 C 56 112, 76 96, 98 62 C 115 36, 127 14, 118 11 C 109 8, 92 44, 88 86 C 85 114, 96 125, 109 116 C 122 106, 132 76, 145 76 C 158 76, 152 108, 166 108 C 180 108, 188 76, 198 76 C 206 76, 204 95, 214 95 C 224 95, 232 72, 224 68 C 216 64, 208 108, 224 108 C 240 108, 256 75, 266 77 C 275 79, 264 106, 278 106 C 294 106, 315 84, 346 62 C 368 46, 386 58, 376 82 C 366 105, 336 112, 314 96 C 294 82, 304 54, 326 52 C 344 50, 354 66, 362 82 C 372 102, 388 106, 405 94"
+          />
+        </svg>
+      </div>
+
+      <span class="eyebrow">A Birthday Surprise</span>
+      <h1 class="hero-title">
+        Happy Birthday
+        <span class="hero-name">Khaross busy adamii</span>
+      </h1>
+      <p class="hero-sub">
+        Make a wish, blow out the candles, and read every little piece kept here just for you.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn-primary" type="button" onclick="scrollToSection('cakeSection')">
+          Make a Wish &amp; Blow Candles
+        </button>
+        <button class="btn-ghost" type="button" onclick="scrollToSection('letterSection')">
+          Read Birthday Note
+        </button>
+      </div>
+    </header>
+
+    <!-- Pretty Cake & Candle Blowing -->
+    <section id="cakeSection" class="glass-card">
+      <div class="section-tag">Birthday Cake</div>
+      <h2 class="section-heading">Make a Wish &amp; Blow the Candles</h2>
+      <p class="section-caption">
+        Write your wish below, then tap the button or tap a candle flame to blow them out.
+      </p>
+
+      <div class="cake-stage">
+        <div id="cakeScene" class="cake-scene">
+          <div class="cake-glow"></div>
+          <svg class="cake-svg" viewBox="0 0 280 260" aria-label="Pretty pastel blue and white birthday cake">
+            <defs>
+              <linearGradient id="tierBottom" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#e3eef8" />
+                <stop offset="50%" stop-color="#f7fbff" />
+                <stop offset="100%" stop-color="#cfe1f2" />
+              </linearGradient>
+              <linearGradient id="tierTop" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#d7e7f6" />
+                <stop offset="50%" stop-color="#ffffff" />
+                <stop offset="100%" stop-color="#c3d9ee" />
+              </linearGradient>
+              <linearGradient id="icingBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#9cc2e3" />
+                <stop offset="100%" stop-color="#76a3cc" />
+              </linearGradient>
+              <radialGradient id="flameGlow" cx="50%" cy="45%" r="55%">
+                <stop offset="0%" stop-color="#fff8d6" />
+                <stop offset="55%" stop-color="#ffd166" />
+                <stop offset="100%" stop-color="#f4a261" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+
+            <!-- Cake stand / plate -->
+            <ellipse cx="140" cy="236" rx="112" ry="14" fill="#dce8f3" stroke="#9ebdd9" stroke-width="1.5" />
+            <rect x="122" y="238" width="36" height="10" rx="4" fill="#c7d9ea" />
+            <ellipse cx="140" cy="249" rx="54" ry="6" fill="#bfd3e6" />
+
+            <!-- Bottom tier -->
+            <rect x="48" y="156" width="184" height="76" rx="18" fill="url(#tierBottom)" stroke="#a9c6e2" stroke-width="1.5" />
+            <path
+              d="M 48 168 Q 60 186 72 168 Q 84 188 96 168 Q 108 185 120 168 Q 132 189 144 168 Q 156 185 168 168 Q 180 188 192 168 Q 204 185 216 168 Q 224 180 232 168 L 232 158 L 48 158 Z"
+              fill="url(#icingBlue)"
+              opacity="0.88"
+            />
+
+            <!-- Top tier -->
+            <rect x="74" y="102" width="132" height="58" rx="16" fill="url(#tierTop)" stroke="#a9c6e2" stroke-width="1.5" />
+            <path
+              d="M 74 113 Q 85 128 96 113 Q 107 130 118 113 Q 129 127 140 113 Q 151 130 162 113 Q 173 127 184 113 Q 195 128 206 113 L 206 104 L 74 104 Z"
+              fill="url(#icingBlue)"
+            />
+
+            <!-- Delicate pearl dots & tiny hearts -->
+            <circle cx="96" cy="142" r="3" fill="#ffffff" />
+            <circle cx="118" cy="142" r="3" fill="#ffffff" />
+            <circle cx="140" cy="142" r="3" fill="#ffffff" />
+            <circle cx="162" cy="142" r="3" fill="#ffffff" />
+            <circle cx="184" cy="142" r="3" fill="#ffffff" />
+
+            <circle cx="76" cy="206" r="3.5" fill="#ffffff" />
+            <circle cx="108" cy="206" r="3.5" fill="#ffffff" />
+            <circle cx="140" cy="206" r="3.5" fill="#ffffff" />
+            <circle cx="172" cy="206" r="3.5" fill="#ffffff" />
+            <circle cx="204" cy="206" r="3.5" fill="#ffffff" />
+
+            <path
+              d="M 140 192 C 135 185, 125 187, 125 195 C 125 202, 140 211, 140 211 C 140 211, 155 202, 155 195 C 155 187, 145 185, 140 192 Z"
+              fill="#6f9ec9"
+            />
+
+            <!-- Candle 1 (Left) -->
+            <rect x="103" y="66" width="10" height="36" rx="4" fill="#ffffff" stroke="#8cb2d6" stroke-width="1.3" />
+            <line x1="108" y1="60" x2="108" y2="66" stroke="#485e75" stroke-width="1.8" stroke-linecap="round" />
+            <path class="smoke-puff" d="M 108 56 Q 102 46 109 36" />
+            <g class="flame-group" onclick="blowOutCandles()">
+              <circle cx="108" cy="48" r="14" fill="url(#flameGlow)" />
+              <path class="flame-outer" d="M 108 32 C 115 41, 116 53, 108 57 C 100 53, 101 41, 108 32 Z" fill="#ffb703" />
+              <path class="flame-inner" d="M 108 40 C 112 45, 112 52, 108 55 C 104 52, 104 45, 108 40 Z" fill="#fff8d6" />
+            </g>
+
+            <!-- Candle 2 (Center Tall) -->
+            <rect x="135" y="58" width="10" height="44" rx="4" fill="#ffffff" stroke="#8cb2d6" stroke-width="1.3" />
+            <line x1="140" y1="52" x2="140" y2="58" stroke="#485e75" stroke-width="1.8" stroke-linecap="round" />
+            <path class="smoke-puff" d="M 140 48 Q 147 38 139 28" />
+            <g class="flame-group" onclick="blowOutCandles()">
+              <circle cx="140" cy="40" r="16" fill="url(#flameGlow)" />
+              <path class="flame-outer" d="M 140 23 C 148 33, 149 45, 140 49 C 131 45, 132 33, 140 23 Z" fill="#ffb703" />
+              <path class="flame-inner" d="M 140 32 C 144 37, 144 44, 140 47 C 136 44, 136 37, 140 32 Z" fill="#fff8d6" />
+            </g>
+
+            <!-- Candle 3 (Right) -->
+            <rect x="167" y="66" width="10" height="36" rx="4" fill="#ffffff" stroke="#8cb2d6" stroke-width="1.3" />
+            <line x1="172" y1="60" x2="172" y2="66" stroke="#485e75" stroke-width="1.8" stroke-linecap="round" />
+            <path class="smoke-puff" d="M 172 56 Q 178 46 171 36" />
+            <g class="flame-group" onclick="blowOutCandles()">
+              <circle cx="172" cy="48" r="14" fill="url(#flameGlow)" />
+              <path class="flame-outer" d="M 172 32 C 179 41, 180 53, 172 57 C 164 53, 165 41, 172 32 Z" fill="#ffb703" />
+              <path class="flame-inner" d="M 172 40 C 176 45, 176 52, 172 55 C 168 52, 168 45, 172 40 Z" fill="#fff8d6" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="wish-box">
+          <input
+            id="wishInput"
+            class="wish-input"
+            type="text"
+            placeholder="Type your birthday wish here before blowing the candles..."
+          />
+          <div class="cake-buttons">
+            <button id="blowBtn" class="btn-primary" type="button" onclick="blowOutCandles()">
+              Blow Out Candles 🎂
+            </button>
+            <button id="relightBtn" class="btn-ghost" type="button" onclick="relightCandles()">
+              Relight Candles
+            </button>
+          </div>
+          <div id="wishStatus" class="wish-status"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exact Birthday Wish Letter -->
+    <section id="letterSection" class="glass-card">
+      <div class="section-tag">Birthday Wish</div>
+      <h2 class="section-heading">For My Favorite Person</h2>
+
+      <div class="letter-paper">
+        <p class="letter-text">Happy birthday 🎂 to the most favorite person of my life and busiest person 👊🏼😂
+I don't know where to begin, but I have so many things to say—so much that I've never actually said before or told you about, though you probably figured it out on your own.
+Well, since it's your birthday today, I figured it's my duty to praise you a little, to tell you how you are and what you mean to me. 💗🤭
+Honestly, I get angry with you more than I should sometimes, but I know very well that the anger is only temporary, and the love comes right back after. I know no one is perfect; every person has some flaws. That's why, however you are and whatever you are, you are perfect for me. I have no need to change you. True love is about freedom, not keeping someone captive.
+In my full senses and sound mind, I, Sidra, confess to you: the way I have loved you, the place I have given you in my life and in my heart—no one else has ever reached there, and no one ever will. There is no looking back; the destination ahead is with you. And if you aren't there, I would close every door leading toward my heart myself, because I fell in love with you when I wasn't even looking to fall in love with anyone. 🥹
+Everything changes around here, but when I wasn't even searching, you came into my life—thank you so much for that. Thank you for tolerating my anger, my talks, our fights, and my mood swings, my jaan. I want you to stay happy—not just happy, but extremely, wonderfully happy. Remember my words: no matter what happens, whether anyone else is there or not, I will always stand right by your side, mister busy ❤️.
+And yeah, you are pretty good too 😂💗, not bad at all—I guess I can manage to live life fighting with you! Well, of course, I can't stop doing that, because a day doesn't even pass without it, jaan.
+I love you so much, you grumpy soul 🤭.
+If I started telling you everything, this would get way too long, so I'll tell you the rest when we sit face-to-face, januuu 💕💋.
+Happy Birthday! 👊🏼♥️</p>
+      </div>
+    </section>
+
+    <!-- Extra Romantic Lines -->
+    <section class="glass-card">
+      <div class="section-tag">Soft Whispers</div>
+      <h2 class="section-heading">Little Things I Feel for You</h2>
+
+      <div class="romantic-lines-grid">
+        <div class="romantic-whisper">
+          Even on the busiest days when your world is spinning fast, you still quietly become the calmest, warmest thought inside mine. 🤍
+        </div>
+        <div class="romantic-whisper">
+          I don't ask for grand fairytales—I just want ordinary mornings, shared laughs, our usual bickering, and your hand right next to mine. 💕
+        </div>
+        <div class="romantic-whisper">
+          Out of every crowded room and every passing season, my heart still knows your name before I even finish thinking it. ✨
+        </div>
+      </div>
+    </section>
+
+    <!-- Hidden Romantic Compliment (Tap to Reveal) -->
+    <section class="glass-card">
+      <div class="section-tag">Secret Note</div>
+      <h2 class="section-heading">A Little Something Hidden for You</h2>
+
+      <div id="secretCard" class="secret-envelope" onclick="openSecretNote()">
+        <div class="secret-cover">
+          <div class="lock-badge">🔒 Tap to Unlock Secret Compliment</div>
+          <div class="secret-prompt-title">Not meant to be seen at first glance...</div>
+          <p class="secret-prompt-sub">Tap here to open the hidden note kept just for you.</p>
+        </div>
+
+        <div class="secret-revealed-content">
+          <p class="secret-text">And who told you that you look good in black? Whoever saw you didn't look closely enough. I've observed and tested this myself—the way you look dressed in white, I don't think you could ever look that good in anything else.
+I've watched you very closely in it, jaan, and no one can look more handsome than you do in white—even though white isn't even my favorite color, until you wear it. Looking at you changes my entire theory.
+This is the bestest compliment from my side, and I'm telling you what's truly in my heart, even though I wasn't supposed to say it out loud. 🤍😭💋Stand in front of the mirror on my behalf and see for yourself too🙈</p>
+          <div class="hide-btn-wrap">
+            <button class="btn-small" type="button" onclick="closeSecretNote(event)">
+              Hide Note Again
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Funny Future Advice + Sofa Saving Note -->
+    <section class="glass-card">
+      <div class="section-tag">Future Planning</div>
+      <h2 class="section-heading">Important Future Advice</h2>
+
+      <div class="letter-paper">
+        <p class="advice-text">One most important piece of advice:
+Make sure to keep a sofa in the room after we get married, okay jaan? Because after a fight, you'll need somewhere to sleep—so that will be perfect, right? 😂♥️👊🏼</p>
+
+        <div class="sofa-note">
+          <strong>Little reminder for you, bandr:</strong> Start saving up early for a genuinely good, extra-comfortable sofa so that whenever our fights happen later, you have a cozy spot to sleep peacefully without complaining! 🛋️😂
+        </div>
+      </div>
+    </section>
+
+    <!-- Second-by-Second Emotional Distance Message & Question -->
+    <section id="emotionalSection" class="glass-card">
+      <div class="section-tag">From My Heart</div>
+      <h2 class="section-heading">Every Single Moment</h2>
+
+      <div class="emotional-stage">
+        <p class="emotional-main">I don't need a reason to miss you—I miss you in every moment, over every little thing. So let's put an end to this distance now, please? 🥺💕</p>
+
+        <div class="beat-timeline" id="beatTimeline">
+          <p class="beat-line" id="beat1">Every passing second makes the distance feel a little heavier...</p>
+          <p class="beat-line" id="beat2">I wish I didn't have to say it through a screen when I just want you right here...</p>
+          <p class="beat-line beat-question" id="beat3">Do you miss me too? 🥺</p>
+        </div>
+
+        <button class="btn-ghost" type="button" onclick="replayEmotionalSequence()">
+          Replay That Moment
+        </button>
+      </div>
+    </section>
+
+    <!-- Interactive Questions (Romantic + Funny) -->
+    <section class="glass-card">
+      <div class="section-tag">Your Turn to Answer</div>
+      <h2 class="section-heading">Two Little Questions for You</h2>
+      <p class="section-caption">
+        One from the heart, and one just to make you smile.
+      </p>
+
+      <div class="question-block">
+        <label for="loveAnswer" class="question-label">
+          1. How much do you love me? I hope even more than you love me—and even more than yourself ❤️
+        </label>
+        <div class="choice-row">
+          <button class="choice-pill" type="button" onclick="pickLoveChoice(this, 'More than anything in this world ❤️')">
+            More than anything ❤️
+          </button>
+          <button class="choice-pill" type="button" onclick="pickLoveChoice(this, 'More than I love myself, no doubt 💕')">
+            More than myself 💕
+          </button>
+          <button class="choice-pill" type="button" onclick="pickLoveChoice(this, 'Infinity and beyond, januuu ✨')">
+            Infinity &amp; beyond ✨
+          </button>
+        </div>
+        <input
+          id="loveAnswer"
+          class="answer-input"
+          type="text"
+          placeholder="Write your answer here..."
+          oninput="updateLoveReply(this.value)"
+        />
+        <div id="loveReply" class="reply-note"></div>
+      </div>
+
+      <div class="question-block">
+        <label for="funnyAnswer" class="question-label">
+          2. Be honest, Mister Busy: if you fall asleep on that future sofa after a fight, who is actually going to bring you a blanket first? 😂🛋️
+        </label>
+        <div class="choice-row">
+          <button class="choice-pill" type="button" onclick="pickFunnyChoice(this, 'Obviously you, because you cannot stay mad for long 😂💗')">
+            Obviously you 😂💗
+          </button>
+          <button class="choice-pill" type="button" onclick="pickFunnyChoice(this, 'I will bribe you with peace and quiet first 🤭')">
+            Peace &amp; quiet first 🤭
+          </button>
+        </div>
+        <input
+          id="funnyAnswer"
+          class="answer-input"
+          type="text"
+          placeholder="Drop your honest answer..."
+          oninput="updateFunnyReply(this.value)"
+        />
+        <div id="funnyReply" class="reply-note"></div>
+      </div>
+    </section>
+
+    <!-- Final Heartfelt Line & Sign-off -->
+    <footer class="glass-card final-card">
+      <div class="section-tag">Always &amp; Forever</div>
+      <p class="final-dua">
+        After your mama, I am the only one who has prayed for you before praying for myself—understand that, it's not a fight, I just love you more 👊🏼💗🙄
+      </p>
+
+      <div class="signoff-jaan">Ap ki jaan 💗</div>
+      <div class="signoff-name">— mano</div>
+
+      <div class="footer-meta">
+        Crafted with love for Khaross busy adamii 💙✨
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    // Soft music-box melody via Web Audio API
+    let audioCtx = null;
+    let melodyTimer = null;
+    let isPlayingMusic = false;
+
+    const melodyNotes = [
+      { freq: 523.25, dur: 0.45 },
+      { freq: 659.25, dur: 0.45 },
+      { freq: 783.99, dur: 0.55 },
+      { freq: 659.25, dur: 0.45 },
+      { freq: 698.46, dur: 0.45 },
+      { freq: 587.33, dur: 0.55 },
+      { freq: 523.25, dur: 0.75 },
+      { freq: 392.00, dur: 0.45 },
+      { freq: 493.88, dur: 0.45 },
+      { freq: 587.33, dur: 0.55 },
+      { freq: 523.25, dur: 0.85 }
+    ];
+
+    function playSingleNote(freq, duration) {
+      if (!audioCtx) return;
+      const now = audioCtx.currentTime;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(freq, now);
+
+      gain.gain.setValueAtTime(0.0001, now);
+      gain.gain.exponentialRampToValueAtTime(0.045, now + 0.04);
+      gain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
+
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+
+      osc.start(now);
+      osc.stop(now + duration + 0.02);
+    }
+
+    function startMelodyLoop() {
+      let idx = 0;
+      const step = () => {
+        if (!isPlayingMusic) return;
+        const note = melodyNotes[idx % melodyNotes.length];
+        playSingleNote(note.freq, note.dur);
+        idx += 1;
+        melodyTimer = setTimeout(step, note.dur * 1000 + 90);
+      };
+      step();
+    }
+
+    function toggleMusic(forcePlay = false) {
+      const btn = document.getElementById('musicToggle');
+      const label = document.getElementById('musicLabel');
+
+      if (!audioCtx) {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (AudioContextClass) {
+          audioCtx = new AudioContextClass();
+        }
+      }
+
+      if (audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+
+      if (forcePlay && isPlayingMusic) return;
+
+      isPlayingMusic = forcePlay ? true : !isPlayingMusic;
+
+      if (isPlayingMusic) {
+        btn.classList.add('playing');
+        label.textContent = 'Pause Melody';
+        startMelodyLoop();
+      } else {
+        btn.classList.remove('playing');
+        label.textContent = 'Play Melody';
+        if (melodyTimer) clearTimeout(melodyTimer);
+      }
+    }
+
+    document.getElementById('musicToggle').addEventListener('click', () => toggleMusic(false));
+
+    // Cake candle blowing & wish
+    function blowOutCandles() {
+      const scene = document.getElementById('cakeScene');
+      const status = document.getElementById('wishStatus');
+      const wishVal = document.getElementById('wishInput').value.trim();
+
+      scene.classList.add('candles-blown');
+      toggleMusic(true);
+      launchSoftConfetti();
+
+      if (wishVal) {
+        status.textContent = `Your wish — "${wishVal}" — is sealed with love. Happy Birthday, Khaross busy adamii! 🎂💗`;
+      } else {
+        status.textContent = 'Candles blown out! May every wish you made come true, Khaross busy adamii 🎂💗';
+      }
+    }
+
+    function relightCandles() {
+      const scene = document.getElementById('cakeScene');
+      const status = document.getElementById('wishStatus');
+      scene.classList.remove('candles-blown');
+      status.textContent = 'Candles lit again—make another wish whenever you are ready ✨';
+    }
+
+    // Secret note toggle
+    function openSecretNote() {
+      const card = document.getElementById('secretCard');
+      card.classList.add('is-open');
+    }
+
+    function closeSecretNote(event) {
+      event.stopPropagation();
+      const card = document.getElementById('secretCard');
+      card.classList.remove('is-open');
+    }
+
+    // Second-by-second emotional pacing
+    let emotionalTimers = [];
+    let emotionalTriggered = false;
+
+    function runEmotionalSequence() {
+      emotionalTimers.forEach((t) => clearTimeout(t));
+      emotionalTimers = [];
+
+      const b1 = document.getElementById('beat1');
+      const b2 = document.getElementById('beat2');
+      const b3 = document.getElementById('beat3');
+
+      [b1, b2, b3].forEach((el) => el.classList.remove('visible'));
+
+      emotionalTimers.push(setTimeout(() => b1.classList.add('visible'), 1000));
+      emotionalTimers.push(setTimeout(() => b2.classList.add('visible'), 2300));
+      emotionalTimers.push(setTimeout(() => b3.classList.add('visible'), 3600));
+    }
+
+    function replayEmotionalSequence() {
+      runEmotionalSequence();
+    }
+
+    const emotionalSection = document.getElementById('emotionalSection');
+    if ('IntersectionObserver' in window && emotionalSection) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && !emotionalTriggered) {
+              emotionalTriggered = true;
+              runEmotionalSequence();
+            }
+          });
+        },
+        { threshold: 0.35 }
+      );
+      observer.observe(emotionalSection);
+    } else {
+      runEmotionalSequence();
+    }
+
+    // Question interactions
+    function pickLoveChoice(btn, text) {
+      const parent = btn.parentElement;
+      parent.querySelectorAll('.choice-pill').forEach((p) => p.classList.remove('active'));
+      btn.classList.add('active');
+      const input = document.getElementById('loveAnswer');
+      input.value = text;
+      updateLoveReply(text);
+    }
+
+    function updateLoveReply(val) {
+      const reply = document.getElementById('loveReply');
+      if (!val.trim()) {
+        reply.textContent = '';
+        return;
+      }
+      reply.textContent = `Saved in my heart: "${val.trim()}" — I will hold you to that, Mister Busy 💗`;
+    }
+
+    function pickFunnyChoice(btn, text) {
+      const parent = btn.parentElement;
+      parent.querySelectorAll('.choice-pill').forEach((p) => p.classList.remove('active'));
+      btn.classList.add('active');
+      const input = document.getElementById('funnyAnswer');
+      input.value = text;
+      updateFunnyReply(text);
+    }
+
+    function updateFunnyReply(val) {
+      const reply = document.getElementById('funnyReply');
+      if (!val.trim()) {
+        reply.textContent = '';
+        return;
+      }
+      reply.textContent = `Noted for the sofa files: "${val.trim()}" 😂🛋️`;
+    }
+
+    // Gentle powder-blue & white confetti on candle blow
+    const canvas = document.getElementById('confettiCanvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let animFrameId = null;
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function launchSoftConfetti() {
+      const palette = ['#8cb6dc', '#5885b0', '#dceaf7', '#b8d4ec', '#ffffff'];
+      particles = Array.from({ length: 75 }, () => ({
+        x: Math.random() * canvas.width,
+        y: -20 - Math.random() * 140,
+        r: 3.5 + Math.random() * 4.5,
+        vy: 1.6 + Math.random() * 2.6,
+        vx: -1 + Math.random() * 2,
+        rot: Math.random() * Math.PI * 2,
+        vRot: -0.05 + Math.random() * 0.1,
+        color: palette[Math.floor(Math.random() * palette.length)],
+        alpha: 1
+      }));
+
+      if (animFrameId) cancelAnimationFrame(animFrameId);
+
+      function renderParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        let activeCount = 0;
+
+        particles.forEach((p) => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.rot += p.vRot;
+          if (p.y > canvas.height * 0.72) {
+            p.alpha = Math.max(0, p.alpha - 0.025);
+          }
+
+          if (p.alpha > 0 && p.y < canvas.height + 30) {
+            activeCount += 1;
+            ctx.save();
+            ctx.globalAlpha = p.alpha;
+            ctx.translate(p.x, p.y);
+            ctx.rotate(p.rot);
+            ctx.fillStyle = p.color;
+            ctx.beginPath();
+            ctx.roundRect(-p.r, -p.r * 0.6, p.r * 2, p.r * 1.2, 2);
+            ctx.fill();
+            ctx.restore();
+          }
+        });
+
+        if (activeCount > 0) {
+          animFrameId = requestAnimationFrame(renderParticles);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+
+      renderParticles();
+    }
+  </script>
+</body>
+</html>
